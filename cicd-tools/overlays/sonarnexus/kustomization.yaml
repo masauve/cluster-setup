@@ -7,3 +7,7 @@ namespace: cicd-tools
 bases:
   - github.com/redhat-cop/gitops-catalog/nexus2/base?ref=main
   - github.com/redhat-cop/gitops-catalog/sonarqube8/overlays/plugins?ref=main
+
+resources:
+  - namespace.yaml
+
