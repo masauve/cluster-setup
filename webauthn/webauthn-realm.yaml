@@ -1,0 +1,30 @@
+kind: KeycloakRealm
+apiVersion: keycloak.org/v1alpha1
+metadata:
+  name: webauthn-keycloakrealm
+  labels:
+    app: sso
+spec:
+  realm:
+    id: webauthn
+    realm: webauthn
+    enabled: true
+    displayName: Passwordless
+    registrationAllowed: true
+    authenticationFlows:
+      - alias: Browser WebAuthN
+        description: Browser WebAuthN Authentication
+        topLevel: true
+        providerId: basic-flow
+        buildIn: false
+        id: 1120cd1c-d1d7-4c13-8e38-45beeaed6ac4
+        authenticationExecutions:
+          - authenticator: "auth-cookie"
+            authenticatorFlow: false
+            requirement: "ALTERNATIVE"
+            priority: 10
+            autheticatorFlow: false
+            userSetupAllowed: false
+  instanceSelector:
+    matchLabels:
+      app: sso
