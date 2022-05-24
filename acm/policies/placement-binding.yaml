@@ -8,6 +8,6 @@ placementRef:
   kind: PlacementRule
   apiGroup: apps.open-cluster-management.io
 subjects:
-  - name: policy-complianceoperator
+  - name: policy-complianceoperator-demo
     kind: Policy
     apiGroup: policy.open-cluster-management.io
