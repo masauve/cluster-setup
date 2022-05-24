@@ -2,7 +2,7 @@ apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
 metadata:
   name: binding-policy-complianceoperator
-  namespace: anonymous
+  namespace: policies
 placementRef:
   name: placement-policy-complianceoperator
   kind: PlacementRule

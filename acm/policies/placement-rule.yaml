@@ -2,7 +2,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   name: placement-policy-complianceoperator
-  namespace: anonymous
+  namespace: policies
 spec:
   clusterConditions:
     - status: 'True'
