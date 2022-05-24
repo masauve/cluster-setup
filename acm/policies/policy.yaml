@@ -1,7 +1,7 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: Policy
 metadata:
-  name: policy-complianceoperator
+  name: policy-complianceoperator-demo
   namespace: anonymous
   annotations:
     policy.open-cluster-management.io/standards: NIST-CSF
